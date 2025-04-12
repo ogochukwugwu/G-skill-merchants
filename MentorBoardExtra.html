@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Mentor Board Extra</title>
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="Home2.css">
+  <link rel="stylesheet" href="About.css">
+  <link rel="stylesheet" href="internship.css">
+  <link rel="stylesheet" href="Services.css">
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="home3.css">
+  <link rel="stylesheet" href="mentorboard.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+
+</head>
+
+<body>
+ <header>
+  <a href="#" class="logo">Skill Merchants</a>
+  <div class="menuToggle"></div>
+  <nav>
+    <ul>
+      <li><a href="Home-Navbar.html">Home</a></li>
+      <li><a href="Home-Navbar.html#aboutnow">About</a></li>
+      <li><a href="#">Oppotunities&#x25BE;</a>
+        <ul>
+        <li><a href="Industrial Training.html">Industrial Training</a></li>
+        <li><a href="Internship.html">Internship</a></li>
+        <li><a href="Vacancy.html">Vacancy</a></li>
+        <li><a href="Scholarship.html">Scholarship/Sponsorship/Grant</a></li>
+        <li><a href="Conference.html">Workshop/Conference</a></li>
+        </ul>
+      </li>
+      <li><a href="Home-Navbar.html#serv">Services</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="Home-Navbar.html#contactmee">Contact</a></li>
+
+
+  
+
+
+    </ul>
+  </nav>
+
+ </header>
+
+ 
+ <h3 class="bookingss">Mentor Board</h3>
+ <p class="bookingps">A collaborative network of seasoned mentors</p>
+ <p class="bookingps">Book appointment with any of the experts for one-on-one conversation</p>
+ <div class="container">
+     <!-- DrSmith -->
+     <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+     <!-- DrSam -->
+     <div class="card" id="Anne-card">
+      <h1>Login</h1>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+        <img src="kade.jpg" alt="Anne">
+        <h3>Anne</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-Anne">
+            <input type="time" id="time-Anne">
+            <button id="set-availability-Anne" onclick="setAvailability('Anne')" disabled>Set Availability</button>
+            <button id="delete-availability-Anne" onclick="deleteAvailability('Anne')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-Anne">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-Anne" placeholder="Enter your Name">
+            <input type="email" id="client-email-Anne" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('Anne', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('Anne', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('Anne', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-Anne" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-Anne" accept="image/*">
+                <button onclick="confirmBankTransfer('Anne', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+     <!-- DrJones -->
+     <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+     <!-- Anne -->
+     <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+     <!-- CoachMark -->
+     <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+     <!-- DrJohn -->
+     <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>  
+    <!-- DrAdams -->
+    <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+     <!-- Williams -->
+     <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+
+ <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+
+ <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="DrSmith-card">
+      <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="Email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+        <img src="kade.jpg" alt="DrSmith">
+        <h3>DrSmith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+            <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+        <div class="booking">
+            <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+            <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+            <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" id="DrSmith-card">
+  <h1>Login</h1>
+<form id="login-form">
+<input type="email" id="Email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <img src="kade.jpg" alt="DrSmith">
+    <h3>DrSmith</h3>
+    <p>Price: <strong>&#8358;20,000</strong></p>
+    <div class="availability">
+        <input type="date" id="date-DrSmith">
+        <input type="time" id="time-DrSmith">
+        <button id="set-availability-DrSmith" onclick="setAvailability('DrSmith')" disabled>Set Availability</button>
+        <button id="delete-availability-DrSmith" onclick="deleteAvailability('DrSmith')" disabled>Delete Availability</button>
+        <label>Check Availability:</label>
+        <select id="available-dates-DrSmith">
+            <option value="">--Check Availability--</option>
+        </select>
+    </div>
+    <div class="booking">
+        <input type="text" id="client-name-DrSmith" placeholder="Enter your Name">
+        <input type="email" id="client-email-DrSmith" placeholder="Enter your Email">
+        <button onclick="payWithPaystack('DrSmith', 20000)">Pay with Paystack</button>
+        <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+        <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+        <div id="bank-transfer-upload-DrSmith" style="display: none;">
+            <p>Transfer to: <strong>Access Bank, Account: 1234567890</strong></p>
+            <input type="file" id="proof-DrSmith" accept="image/*">
+            <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+        </div>
+    </div>
+</div>
+
+ 
+
+   
+ 
+
+
+<script src="front.js"></script>
+  >
+ 
+  <script src="home.js"></script>
+
+  <script src="homebar.js"></script>
+
+  <script src="codesign.js"></script>
+
+  
+
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.IT{
+  height: calc(60vh - 40px);
+  text-align: left;
+  text-indent: 15px;
+  text-transform: uppercase;
+  font-size: large;
+  margin-top: 10px;
+  background-color: rgba(151, 188, 231, 0.384);
+  
+}
+
+.intern{
+  height: calc(60vh - 40px);
+  text-align: left;
+  text-indent: 15px;
+  text-transform: uppercase;
+  font-size: large;
+  background-color: rgba(231, 208, 172, 0.384);
+  
+  
+
+}
+
+.vac{
+  height: calc(60vh - 40px);
+  text-align: left;
+  text-indent: 15px;
+  text-transform: uppercase;
+  font-size: large;
+  background-color: rgba(237, 180, 180, 0.384);
+  
+  
+}
+
+.ssp{
+  height: calc(60vh - 40px);
+  text-align: left;
+  text-indent: 15px;
+  text-transform: uppercase;
+  font-size: large;
+  background-color: rgba(165, 226, 162, 0.384);
+  
+}
+
+.wospon{
+height: calc(60vh - 40px);
+text-align: left;
+text-indent: 15px;
+text-transform: uppercase;
+font-size: large;
+background-color: rgba(201, 203, 134, 0.384);
+  
+
+}
+
+
+.internships-list {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.internship-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.internship-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.company {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.internship-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.apply-button {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.apply-button:hover {
+  background: #0056b3;
+}
+
+.requirements {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  color: #444;
+}

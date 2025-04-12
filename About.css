@@ -1,0 +1,62 @@
+.aboutgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 30px;
+  padding: 50px;
+ width: fit-content;
+ border: 1px solid #fff;
+ 
+}
+
+.aboutwe h4{
+  position: relative;
+  bottom: 8px;
+}
+
+.aboutwe{
+  text-align: left;
+  margin: 1px;
+  padding: 25px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+  border: 1px solid #ddd;
+  background-color: rgba(175, 175, 250, 0.105);
+   
+}
+
+.aboutwe:hover{
+  background: rgba(201, 206, 252, 0.712);
+  color: black;
+  transform : scale(1.05);
+  background-color: rgba(251, 251, 253, 0.354);
+}
+
+.getuse{
+  color: rgb(230, 230, 244);
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  position: relative;
+  bottom: 30px;
+  
+}
+
+
+
+.contactmi{
+  background-color: rgba(4, 0, 13, 0.984);
+}
+
+#aboutnow{
+  background-color: rgba(239, 239, 229, 0.534);
+}
+
+.anothercontact{
+  color: #fff;
+  background-color: none;
+}
+
+
+

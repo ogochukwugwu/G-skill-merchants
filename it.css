@@ -1,0 +1,63 @@
+.training-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.job-entry {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-logo {
+  flex: 0 0 200px;
+  margin-right: 30px;
+}
+
+.company-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.job-details {
+  flex: 1;
+}
+
+.job-title {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.apply-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-entry {
+      flex-direction: column;
+  }
+  
+  .company-logo {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 200px;
+  }
+}

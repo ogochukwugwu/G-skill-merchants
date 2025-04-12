@@ -1,0 +1,90 @@
+
+.thumbnail{
+  width: 100%;
+  
+}
+.video.title{
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 15px;
+}
+
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+ 
+  
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 30px;
+  row-gap: 80px;
+  padding: 50px;
+  
+  
+  
+}
+ 
+.profile-picture{
+  width: 40px;
+  border-radius: 20px;
+}
+
+.thumbnail-row{
+  margin-bottom: 12px;
+}
+.video-autor{
+  font-size: 12px;
+  color: black;
+}
+
+.video-stats{
+  font-size: 12px;
+  color: blue;
+}
+
+.video-autor{
+  margin-bottom: 15px;
+
+}
+
+.pichome{
+  float: right;
+  width: 100%;
+  object-fit: cover;
+  max-width: 400px;
+  border-radius: 200px;
+
+}
+
+@media (max-width: 768px){
+  .pichome {
+    width: 80%;
+}
+}
+
+.homewrapper{
+position: absolute;
+width: 85%;
+top:21%;
+
+
+}
+
+.words{
+  position: absolute;
+  width: 90%;
+  
+}
+
+
+
+
+
+
+

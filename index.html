@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System</title>
+    <script>
+        async function setAvailability(doctor) {
+            const date = document.getElementById(`date-${doctor}`).value;
+            const time = document.getElementById(`time-${doctor}`).value;
+            if (!date || !time) {
+                alert('Please select both date and time.');
+                return;
+            }
+            // Code to set availability (e.g., send to backend)
+        }
+
+        async function payWithFlutterwave(doctor, amount) {
+            const name = document.querySelector(`#${doctor} .booking input[type="text"]`).value;
+            const email = document.querySelector(`#${doctor} .booking input[type="email"]`).value;
+            if (!name || !email) {
+                alert('Please enter your name and email.');
+                return;
+            }
+            // Code to initiate payment with Flutterwave (e.g., send to backend)
+        }
+
+        async function manualBankTransfer(doctor, amount) {
+            // Show the file upload section
+            document.getElementById(`bank-transfer-upload-${doctor}`).style.display = 'block';
+        }
+
+        async function confirmBankTransfer(doctor, amount) {
+            const name = document.querySelector(`#${doctor} .booking input[type="text"]`).value;
+            const email = document.querySelector(`#${doctor} .booking input[type="email"]`).value;
+            const proof = document.getElementById(`proof-${doctor}`).files[0];
+
+            if (!name || !email || !proof) {
+                alert('Please enter your name, email, and upload proof of transfer.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('doctor', doctor);
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('amount', amount);
+            formData.append('proof', proof);
+
+            const response = await fetch('/confirm-bank-transfer', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                alert('Payment confirmation sent!');
+                // Additional code to handle successful confirmation
+            } else {
+                alert('Failed to confirm payment.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Insert your existing HTML here -->
+    <!-- Example for one doctor -->
+    <div class="card" id="DrSmith">
+        <img src="kade.jpg" alt="Dr. Smith">
+        <h3>Dr. Smith</h3>
+        <p>Price: <strong>&#8358;20,000</strong></p>
+        <div class="availability">
+            <input type="date" id="date-DrSmith">
+            <input type="time" id="time-DrSmith">
+            <button onclick="setAvailability('DrSmith')">Set Availability</button>
+            <label>Check Availability:</label>
+            <select id="available-dates-DrSmith">
+                <option value="">--Check Availability--</option>
+            </select>
+        </div>
+
+        <div class="booking">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter your Email">
+            <button onclick="payWithFlutterwave('DrSmith', 20000)">Pay with Flutterwave</button>
+            <button onclick="manualBankTransfer('DrSmith', 20000)">Manual Bank Transfer</button>
+            <div id="bank-transfer-upload-DrSmith" style="display: none;">
+                <p>Transfer to: <strong>Access Bank, Account: 676534445</strong></p>
+                <input type="file" id="proof-DrSmith" accept="image/*">
+                <button onclick="confirmBankTransfer('DrSmith', 20000)">Submit Proof</button>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat for other doctors -->
+    <div id="booking-log">
+        <h2>Booking Log</h2>
+        <ul id="booking-log-list"></ul>
+    </div>
+</body>
+</html>

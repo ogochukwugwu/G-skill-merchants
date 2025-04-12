@@ -1,0 +1,236 @@
+/* First Section, Hero page */
+
+.shero{
+  background: rgb(246, 246, 253);
+  height: calc(100vh - 5px);
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30.7)), url(kade.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+/* First Section, Hero page Heading and Paragraph*/
+.divhero{
+  width: 90%;
+  color: rgb(217, 217, 226);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+ }
+ .divhero h1{
+  font-size: 50px;
+}
+.divhero p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+  animation: fadeIn 8s;
+}   
+/* First Section, Hero page How it Works Button*/
+.exploration {
+  position: relative;
+  text-align: center;
+  font-family: serif;
+  font-size: large;
+  background-color: rgb(190, 166, 7);
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  border: none; 
+  cursor: pointer;
+  display: inline-block;
+  background: transparent;
+  color: #f3e8e8;
+  border: 1px solid #745fec; 
+} 
+
+.exploration:hover{
+  cursor: pointer;
+  background-color: rgba(37, 13, 214, 0.564);
+  transition: background-color 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1; }
+}
+
+
+@media(max-width: 700px){
+  .divhero h1{
+    font-size: 20px;
+  }
+}
+
+.section-skill-week{
+ background-color: rgb(243, 246, 248);
+ margin: 0;
+ padding: 0;
+}
+
+.watchslideshead{
+text-align: center;
+padding: 10px;
+
+}
+
+.watchslides{
+text-align: center;
+position: relative;
+
+  }
+
+.material-icons{
+  font-size: 30px;
+  color: white;
+ 
+}
+
+span{
+  color:  hsl(216, 67%, 81%);  
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.contact2{
+  text-align: center;
+  font-family: serif;
+  font-size:medium;
+  font-style: normal;
+  flex-wrap: wrap;
+}
+
+.contact3{
+  text-align: center;
+  font-family: serif;
+  font-size:medium;
+  font-style: normal;
+  flex-wrap: wrap;
+}
+
+#contactme{
+  background-color: azure;
+}
+
+.sliders-row {
+  display: flex;
+  gap: 20px;
+  max-width: 2000px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Individual slider container */
+.sliders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 50px;
+  max-width: 2000px;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 0;
+  max-height: fit-content;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Individual slider container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: fit-content;
+  
+}
+
+/* Mobile responsive layout */
+@media (max-width: 1000px) {
+  .sliders-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+  }
+}
+
+/* Rest of the slider styles remain the same */
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+}
+
+.next { right: 0; }
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+.dots-container {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  background-color: rgba(41, 37, 37, 0.717);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.active-dot { background-color: rgba(255,255,255,0.9); }
+
+
+.thevibes{
+  background-color: rgb(0, 0, 13);
+
+} 
+ .vibe{
+  color: black;
+  text-align: center;
+  padding: 30px;  
+ }
+  
+
+
+
+
+
+
+
+
+
+
